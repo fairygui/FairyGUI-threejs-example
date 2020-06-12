@@ -37,13 +37,10 @@ export class Threescene {
         this.renderer.setSize(window.innerWidth, window.innerHeight);
         this.renderer.localClippingEnabled = true;
         document.body.appendChild(this.renderer.domElement);
-        window.addEventListener('resize', () => {
-            this.renderer.setSize(window.innerWidth, window.innerHeight)
-        }, false);
 
         this.scene = new THREE.Scene();
 
-        fgui.Stage.init(this.renderer);
+        fgui.Stage.init(this.renderer, { screenMode: "horizontal" });
         fgui.Stage.scene = this.scene;
 
         fgui.UIContentScaler.scaleWithScreenSize(1136, 640, fgui.ScreenMatchMode.MatchWidthOrHeight);
