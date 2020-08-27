@@ -9,7 +9,7 @@
   "author": "guzhu",
   "license": "MIT",
   "dependencies": {
-    "fairygui-three": "^0.3.0",
+    "fairygui-three": "^0.5.1",
     "lodash": "^4.17.19",
     "three": "^0.116.1"
   },
@@ -17,7 +17,7 @@
     "@types/lodash": "^4.14.150",
     "@types/node": "^14.0.13",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.1.1",
+    "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^3.5.3",
     "csv-loader": "^3.0.3",
     "expose-loader": "^0.7.5",

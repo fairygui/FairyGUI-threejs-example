@@ -14,12 +14,12 @@ module.exports = {
             title: 'FairyGUI-threejs Demo',
             template: path.resolve(__dirname, 'template.html')
         }),
-        new CopyWebpackPlugin([
-            {
-              from:path.resolve(__dirname, 'assets'),
-              to:path.resolve(__dirname, 'build/assets')
-            }
-          ])
+        new CopyWebpackPlugin({
+            patterns: [{
+                from: path.resolve(__dirname, 'assets'),
+                to: path.resolve(__dirname, 'build/assets')
+            }]
+        })
     ],
     resolve: {
         extensions: ['.tsx', '.ts', '.js']
