@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "fairygui-three": "^0.5.1",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "three": "^0.116.1"
   },
   "devDependencies": {
