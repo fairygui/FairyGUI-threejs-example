@@ -11,7 +11,7 @@
   "dependencies": {
     "fairygui-three": "^0.5.1",
     "lodash": "^4.17.19",
-    "three": "^0.116.1"
+    "three": "^0.137.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.150",
