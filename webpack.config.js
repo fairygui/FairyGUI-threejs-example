@@ -72,17 +72,5 @@ module.exports = {
     optimization: {
         minimize: true,
         minimizer: [new TerserPlugin({ sourceMap: true })],
-        splitChunks: {
-            chunks: 'all',
-            automaticNameDelimiter: '_',
-            name: true,
-            cacheGroups: {
-                three: {
-                    name: 'three',
-                    chunks: 'all',
-                    test: /[\\/]node_modules[\\/](three)[\\/]/,
-                }
-            },
-        }
     }
 };

@@ -84,9 +84,9 @@ export default class TransitionDemo {
     private __playNum(): void {
         fgui.GTween.to(this._startValue, this._endValue, 0.3)
             .setEase(fgui.EaseType.Linear)
-            .onUpdate(function (tweener): void {
+            .onUpdate((tweener: fgui.GTweener) => {
                 this._g5.getChild("value").text = "" + Math.floor(tweener.value.x);
-            }, this);
+            });
     }
 }
 

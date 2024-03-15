@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-      "declaration": false,
-      "target": "es6",
-      "module": "es6",
-      "moduleResolution":"Node",
+    "declaration": false,
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "Node",
+    "strict": true,
+    "strictNullChecks": false
   },
-  
   "include": [
-      "./src/**/*"
+    "./src/**/*"
   ],
   "exclude": [
     "node_modules"

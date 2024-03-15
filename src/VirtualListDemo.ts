@@ -16,9 +16,9 @@ export default class VirtualListDemo {
         this._view.makeFullScreen();
         fgui.GRoot.inst.addChild(this._view);
 
-        this._view.getChild("n6").onClick(function (): void { this._list.addSelection(500, true); }, this);
-        this._view.getChild("n7").onClick(function (): void { this._list.scrollPane.scrollTop(); }, this);
-        this._view.getChild("n8").onClick(function (): void { this._list.scrollPane.scrollBottom(); }, this);
+        this._view.getChild("n6").onClick(() => { this._list.addSelection(500, true); });
+        this._view.getChild("n7").onClick(() => { this._list.scrollPane.scrollTop(); });
+        this._view.getChild("n8").onClick(() => { this._list.scrollPane.scrollBottom(); });
 
         this._list = <fgui.GList>this._view.getChild("mailList");
         this._list.setVirtual();

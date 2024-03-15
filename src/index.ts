@@ -30,7 +30,7 @@ export class Threescene {
     }
 
     private init() {
-        this.renderer = new THREE.WebGLRenderer();//{ antialias: true }
+        this.renderer = new THREE.WebGLRenderer({ antialias: true });//
         this.renderer.setClearColor(0X222222);
         this.renderer.sortObjects = false;
         this.renderer.setPixelRatio(window.devicePixelRatio);

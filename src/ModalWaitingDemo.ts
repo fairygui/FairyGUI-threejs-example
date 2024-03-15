@@ -19,7 +19,7 @@ export default class ModalWaitingDemo {
 
         this._testWin = new TestWin();
         this._testWin.center();
-        this._view.getChild("n0").onClick(function (): void { this._testWin.show(); }, this);
+        this._view.getChild("n0").onClick(() => { this._testWin.show(); }, this);
 
         fgui.GRoot.inst.showModalWait();
         fgui.Timers.add(3000, 1, () => { fgui.GRoot.inst.closeModalWait(); });
